@@ -51,12 +51,15 @@ const fruitSchema = new mongoose.Schema({
 //     mongoose.connection.close();
 // });
 
-Fruit.find({ name: 'Apple'}, function (err, fruits) {
+Fruit.find(function (err, fruits) {
   if (err){
       console.log(err);
   }
   else{
-      console.log("First function call : ", fruits);
+    mongoose.connection.close();
+    fruits.forEach(fruit => {
+      console.log(fruit.name);
+    });
   }
 });
 
