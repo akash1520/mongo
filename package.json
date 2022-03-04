@@ -12,5 +12,14 @@
     "mongodb": "^4.4.0",
     "mongoose": "^6.2.4"
   },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akash1520/mongo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/akash1520/mongo/issues"
+  },
+  "homepage": "https://github.com/akash1520/mongo#readme",
   "description": ""
 }
